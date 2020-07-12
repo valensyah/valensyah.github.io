@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-
-
     <title>My Portfolio</title>
   </head>
+
   <body>
+
     <section>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -38,6 +38,7 @@
       </nav>
     </section>
 
+    <section>
       <div class="jumbotron jumbotron-fluid" id="home">
         <div class="container text-justify">
           <div class="row">
@@ -55,118 +56,103 @@
           </div>
         </div>
       </div>
+    </section>
 
-    <section id="project">
-      <div class="container" >
-        <div class="row" >
-          <div class="col-lg-6 justify-content-center text-justify" id="project_content">
-            <p>Saya telah mencoba membuat sebuah website untuk sistem informasi perpustakaan.
-              Dalam mengerjakan project ini saya tidak sendiri namun ada teman saya yang
-              membantu mengerjakan project ini. Tugas pengerjaan project kami bagi 50%
-              bagian front-end dan 50% bagian back-end jadi tiap orang mengerjakan setengah 
-              bagian desain dan setengah bagian server dan database. Untuk melihat project
-              silahkan klik pada button PROJECT.</p>
-          </div>
-          <div class="col-lg-6 text-center" id="project_title">
-            <h1>My Project</h1>
-            <p>Untuk menguji web ini harus login terlebih dahulu.<br>
-              berikut username dan password yang dapat digunakan<br>
-              Username : achmad<br>
-              password : demo123</p>
-            <button class="btn btn-outline-primary btn-lg"><a href="https://info-perpus.000webhostapp.com/">PROJECT</a></button>
+    <section>
+      <div id="project">
+        <div class="container">
+          <div class="row" >
+            <div class="col-lg-6 justify-content-center text-justify" id="project_content">
+              <p>Saya telah mencoba membuat sebuah website untuk sistem informasi perpustakaan.
+                Dalam mengerjakan project ini saya tidak sendiri namun ada teman saya yang
+                membantu mengerjakan project ini. Tugas pengerjaan project kami bagi 50%
+                bagian front-end dan 50% bagian back-end jadi tiap orang mengerjakan setengah 
+                bagian desain dan setengah bagian server dan database. Untuk melihat project
+                silahkan klik pada button PROJECT.</p>
+            </div>
+            <div class="col-lg-6 text-center" id="project_title">
+              <h1>My Project</h1>
+              <p>Untuk menguji web ini harus login terlebih dahulu.<br>
+                berikut username dan password yang dapat digunakan<br>
+                Username : achmad<br>
+                password : demo123</p>
+              <button class="btn btn-outline-primary btn-lg"><a href="">PROJECT</a></button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="education">
-      <div class="container">
-        <div class="row" class="sub_page3">
-          <div class="col-lg-6" id="education_title">
+    <div class="education" id="education">
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 text-center" id="education_title">
             <h2>My Education Background</h2>
             <p>Terkait dengan web programming saya telah menyelesaikan kelas dasar
               pemrograman web dicoding. sebagai bukti anda bisa melihat sertifikat
               kelulusan saya dengan klik button sertificate</p>
           </div>
-          <div class="col-lg-6 text-center" id="education_profile">
-            <div class="row sub_edu_profile">
-              <div class="col-lg-12 text-center">
-                <p>Pendidikan Formal</p>
-              </div>
-            </div>
-            <div class="row sub_edu_profile"> 
-              <div class="col-lg-3">
-                  <img src="img/logo.png" width="95%" class="img">
-              </div>
-              <div class="col-lg-6" style="margin-top: 6%;">
-                <p>SMA Negeri 4 Kota Bekasi</p>
-              </div>
-              <div class="col-lg-3" style="margin-top: 6%;">
-                <p id="year">2014 - 2017</p>
-              </div>
-            </div>
-            <div class="row sub_edu_profile mt-4">
-              <div class="col-lg-12 text-center">
-                <p>Web programming</p>
-              </div>
-            </div>
-            <div class="row sub_edu_profile mt-4">
-              <div class="col-lg-3">
-                <img src="img/dicoding.jpg" width="95%" style="border-radius: 100%;" class="img">
-              </div>
-              <div class="col-lg-6" style="margin-top: 6%;">
-                <p>Dicoding Indonesia</p>
-              </div>
-              <div class="col-lg-3" style="margin-top: 6%;">
-                <p id="year">2019</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12
-              sertif">
-                <button class="btn btn-warning btn-md"><a href="#sertif" class="page-scroll">Sertificate</a></button>
-              </div>
-            </div>
+          <div class="col-sm-12 col-lg-4 text-center" id="education_profile">
+            <p><strong>Pendidikan Formal</strong></p>
+            <img src="img/logo.png" width="30%" class="img mb-2">
+            <p>SMA Negeri 4 Kota Bekasi<br>2014-2017</p>
+          </div>
+          <div class="col-sm-12 col-lg-4 text-center" id="education_profile">
+            <p><strong>Pemrograman web</strong></p>
+            <img src="img/dicoding.jpg" width="30%" class="img mb-2" style="border-radius: 100%;">
+            <p>Dicoding indonesia<br>2020</p>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="text-center">
+          <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary modal-btn" data-toggle="modal" data-target="#staticBackdrop">
+                Sertificate
+              </button>
 
-    <section id="sertif">
-      <div class="row">
-        <div class="col-lg-12 text-center sertif_position">
-          <img src="img/sertifikat_dicoding.jpg" width="50%">
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Sertifikat Kelulusan Kelas Dasar Pemrograman Web</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/sertifikat_dicoding.jpg" width="50%">
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="contact_">
-      <div class="row text-center" id="contact_title">
-        <div class="col mt-4">
-          <h1>Contact</h1>
-        </div>
-      </div>
-      <div class="row" id="contact">
-        <div class="col-lg-4 col-sm-12">
-          <img src="img/ig.png" width="50%" style="border-radius: 100%;"><br>
-          <p style="margin-left: 13%;"><a href="https://www.instagram.com/mvalensyah/" >Instagram</a></p>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-          <img src="img/wa.png" width="50%" style="border-radius: 100%;"><br>
-          <p style="margin-left: 13%;"><a href="https://api.whatsapp.com/send?phone=628815836451" >Whatsapp</a></p>
-        </div>
-        <div class="col-lg-4 col-sm-12">
-          <img src="img/line.png" width="50%" style="border-radius: 100%;"><br>
-          <p style="margin-left: 20%;" id="line"><a href="http://line.me/ti/p/~mvalensyah">Line</a></p>
-        </div>
-      </div>
-    </section>
     <section>
-      <div class="row footer">
-        <div class="col-lg-12 col-sm-12 text-center">
-          <footer>
-            <p style="padding-top: 20px; padding-bottom: 40px;">Copyright © 2019 By <a href="#home" class="page-scroll">Valen Website</a></p>
-          </footer>
+      <div class="contact">
+        <div class="container text-center">
+          <h2 style="color: white;">Contact</h2>
+          <div class="row" id="contact">
+            <div class="col-sm-12 col-lg-4">
+              <a href="https://www.instagram.com/mvalensyah/">
+                <img src="img/ig.png" width="50%" style="border-radius: 100%;">
+                <p>Instagram</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <a href="https://www.instagram.com/mvalensyah/">
+                <img src="img/wa.png" width="50%" style="border-radius: 100%;">
+                <p>Whatsapp</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <a href="https://www.instagram.com/mvalensyah/">
+                <img src="img/line.png" width="50%" style="border-radius: 100%;">
+                <p>Line</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
