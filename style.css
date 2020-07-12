@@ -20,15 +20,8 @@
   height: 100vh;
 }
 
-#contact_{
-  background: url('img/contact.png');
-  background-size: cover;
-  color: white;
-  height: 100vh;
-}
-
 .nav-item{
-  padding-right: 30px;
+  text-align: left;
 }
 
 .nav-link{
@@ -52,55 +45,39 @@
   transform: translateY(35vh);
 }
 
-#education_title{
+#education_title, #education_profile{
   color: white;
   transform: translateY(30vh);
-}
-
-#education_profile{
-  transform: translateY(10vh);
-  color: white;
   font-size: 1.2em;
 }
 
-.sertif{
-  transform: translateY(10vh);
-}
-
-#sertif{
-  height: 100vh;
-}
-
-.sertif_position{
-  transform: translateY(20vh);
+.modal-btn{
+  transform: translateY(30vh);
 }
 
 .sub_edu_profile{
   transform: translateY(10vh);
 }
 
-#contact_title{
-  transform: translateY(20vh);
-}
-
-#contact, #contact_id{
-  margin-left: 13%;
-  transform: translateY(25vh);
-  font-size: 1.3em;
-}
-
-#contact p a{;
-    color: white;
+.contact{;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background: url('img/contact.png');
+  background-size: cover;
   }
 
-footer p{
-  background: lightgrey;
-  height: 60px;
+.contact h2{
+  padding-top: 10%;
 }
+
+  #contact{
+    margin-top: 10%;
+  }
 
 
 @media (max-width: 1080px){
-  #home, #project, #education, #contact_{
+  #home, #project, #education{
     min-height: 130vh;
     overflow: auto;
   }
@@ -121,15 +98,15 @@ footer p{
   }
 
   #education_title{
-    transform: translateY(15vh);
+    transform: translateY(10vh);
   }
 
   #education_profile{
-    transform: translateY(5vh);
+    transform: translateY(10vh);
   }
 
-  #year{
-    margin-top: -5%;
+  .modal-btn{
+  transform: translateY(15vh);
   }
   .navbar{
     background: black;
@@ -140,13 +117,9 @@ footer p{
     margin-left: -200px;
   }
 
-  .img{
-    width: 20%;
-  }
 
   #contact img{
     width: 25%;
-    margin-left: -17%;
   }
 
   #contact p a{
