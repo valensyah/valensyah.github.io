@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 * {
+    margin: 0;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -8,22 +9,26 @@ body {
     background:#f7f1e3;
 }
 
-.collapse ul {
+.navbar ul {
+    font-size: 80%;
+}
+
+.nav-align {
     margin-left: 22%;
 }
 
 .intro {
     padding-top: 8%;
     width: 100%;
-    height: 85vh;
+    height: 70%;
 }
 
 .intro h2{
-    font-size : 24px;
+    font-size : 130%;
 }
 
 .intro h1 {
-    font-size: 28px;
+    font-size: 150%;
 }
 
 .intro img {
@@ -37,7 +42,7 @@ body {
 
 .btn-intro {
     border-radius: 20px;
-    background:  dodgerblue;
+    background:  steelblue;
     color: white;
     border: none;
 }
@@ -49,13 +54,14 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
     text-decoration: none;
+    color: white;
     
 }
 
 @keyframes slide {
-    from {left: 0px; background:  dodgerblue;}
-    to {left: 120; background: steelblue;
-        left: 200; border-color: darkblue;}
+    from {left: 0%; background:  steelblue;}
+    to {left: 5%; background: dodgerblue;
+        left: 100%; border-color: darkblue;}
 }
 
 
@@ -67,16 +73,16 @@ body {
     color: snow;
 }
 
-.experience, .about{
-    height: 80vh;
-    width: 100%;
-    
+
+.experience {
+    margin-bottom: 10%;
+    margin-top: -5%;
 }
 
 .experience img, .about img {
     margin-top: 15%;
     width: 50%;
-    height: 50vh;
+    height: 70%;
 }
 
 .info {
@@ -84,29 +90,25 @@ body {
  margin-top: 8%;
 }
 
-.movie-app {
-    height: 50vh;
-}
-
 .img-ss {
-    height: 125vh;
+    margin-bottom: 10%;
 }
 
 .img-ss img{
-    width: 800px;
+    width: 70%;
 }
 
 .skills {
-    height: 40vh;
+    margin-bottom: 8%;
 }
 
 .skills img {
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 60%;
 }
 
 .contact {
-    height: 50vh;
+    margin-bottom: 15%;
 }
 
 .fas {
@@ -116,8 +118,8 @@ body {
 .card {
     box-shadow: 0px 3px 2px dodgerblue;
     border-radius: 5px;
-    height: 160px;
-    width: 22rem;
+    height: 100%;
+    width: 80%;
 }
 
 .card p {
@@ -152,124 +154,45 @@ footer {
     padding-bottom: 2%;
 }
 
-@media (max-width: 992px) {
-    .collapse ul {
+@media (max-width: 991.8px){
+    .fab {
+        width: 0px;
+        height: 0px;
+        color: black;  
+    }
+
+    .nav-align {
         margin-left: 0%;
-    }
-
-    .intro h1 {
-        font-size: 25px;
-    }
-
-    .intro h2 {
-        font-size: 20px;
-    }
-
-    .intro img{
-        height: 40%;
-        width: 50%;
-    }
-
-    .about img {
-        width: 45%;
-        height: 55%;
-        margin-top: 25%;
-    }
-
-    .img-ss {
-        height: 120vh;
-    }
-
-    .skills {
-        margin-bottom: 10%;
-    }
-
-    .contact {
-        height: 70vh;
-    }
-
-    .card {
-        margin-top: 30px;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .img-ss {
-        margin-bottom: 150vh;
-    }
-
-    .contact {
-        margin-bottom: 50vh;
     }
 }
 
-
-
-@media (max-width: 576px) {
-    .collapse ul {
-        margin-left: 0%;
+@media (max-width:757.8px){
+    .fab {
+        width: 0px;
+        height: 0px;
+        color: black;    
     }
 
-    .intro {
-        height: 50vh;
-        margin-top: 15%;
-        margin-bottom: 20%;
+    .experience img, .about img {
+        display: none;
     }
+}
 
-    .intro h2 {
-        font-size: 20px;
-    }
+@media (max-width: 575.8px){
 
-    .intro h1 {
-        font-size: 24px;
-    }
-
-    .intro p {
-        font-size: 15px;
-    }
-
-    .intro img{
-        height: 45%;
-        width: 55%;
-    }
-
-    .about {
-        height: 40vh;
-    }
-
-    .about img, .experience img{
+    .experience img, .about img {
         display: none;
     }
 
-    .experience {
-        height: 60vh;
-        margin-top: 10%;
-        margin-bottom: 20%;
-    }
-    
-    .img-ss {
-        height: 170vh;
-        margin-bottom: 250px;
-    }
-
-    .skills {
-        height: 20vh;
-    }
-
     .skills img {
-        width: 50px;
-        height: 50px;
+        width: 20%;
+        height: 50%;
     }
 
-    .contact {
-        margin-bottom: 40vh;
+    .fab {
+        width: 0px;
+        height: 0px;
+        color: black;
+        transform: scale(2);
     }
-
-    .card{
-        width: 18rem;
-        margin-top: 20px;
-    }
-
-
 }
